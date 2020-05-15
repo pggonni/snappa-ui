@@ -87,6 +87,7 @@ h2 {
     position: relative;
     justify-content: space-around;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 32px;
 }
