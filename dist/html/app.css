@@ -226,6 +226,7 @@ input[type=radio]{
     color: var(--gray-10);
     position: absolute;
     text-align: center;
+    width: 100%;
 }
 
 .btn {
