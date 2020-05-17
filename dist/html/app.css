@@ -63,11 +63,15 @@ h2 {
     font-style: normal;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .main-container {
     width: 100%;
     max-width: 1150px;
     height: calc(100vh - 64px);
-    min-height: 740px;
+    min-height: 860px;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -96,9 +100,8 @@ h2 {
     background-color: white;
     width: 40%;
     border: solid 1px;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 0px 4px 25px rgba(0, 72, 103, 0.15);
-    padding-bottom: 8px;
     z-index: 2;
     overflow: hidden;
 }
@@ -117,18 +120,21 @@ h2 {
     font-size: 48px;
     font-weight: 600;
     text-align: center;
-    border-bottom: 2px solid;
+    border-top: 12px solid;
+    border-bottom: 1px solid;
 }
 
 .card-heading.a-card {
     background-color: var(--light-red);
-    border-color: var(--red);
+    border-top-color: var(--red);
+    border-bottom-color: var(--red-outline);
     color: var(--red);
 }
 
 .card-heading.b-card {
     background-color: var(--light-blue);
-    border-color: var(--blue);
+    border-top-color: var(--blue);
+    border-bottom-color: var(--blue-outline);
     color: var(--blue);
 }
 
@@ -231,6 +237,7 @@ input[type=radio]{
 
 .btn {
     padding: 8px 16px;
+    margin: 0px 0px 16px;
     font-size: 1em;
     font-weight: 500;
     border-radius: 10px;
@@ -250,6 +257,11 @@ input[type=radio]{
     color: var(--gray-4);
     background-color: var(--gray-2);
     cursor: not-allowed;
+}
+
+.btn:focus {
+    border: 1px solid rgba(0, 174, 255, 0.8);
+    background-color: rgba(0, 174, 255, 0.1);
 }
 
 .btn-yellow {
